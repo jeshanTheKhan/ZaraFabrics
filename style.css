@@ -1567,3 +1567,7 @@ a.btn-link.text-light:after {
     border: none;
     cursor: pointer;
 }
+.product-image {
+  width: 500px;
+  height: auto; /* This keeps the aspect ratio */
+}
