@@ -1567,3 +1567,68 @@ a.btn-link.text-light:after {
     border: none;
     cursor: pointer;
 }
+.cart-container {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.product-image {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.quantity-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.quantity-btn:hover {
+  background-color: #d9d9d9;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #ff4b4b;
+}
+
+.main-border-button a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.main-border-button a:hover {
+  background-color: #555;
+}
