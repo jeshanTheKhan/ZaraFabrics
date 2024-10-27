@@ -1540,3 +1540,30 @@ a.btn-link.text-light:after {
   background-size: cover;
   transition: transform .3s ease-out;
 }
+
+.product-section   
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
