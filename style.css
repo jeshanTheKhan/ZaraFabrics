@@ -1586,7 +1586,7 @@ a.btn-link.text-light:after {
   border-bottom: 1px solid #eeeeee;
 }
 
-.product-image {
+.products-image {
   width: 80px;
   height: auto;
   border-radius: 5px;
@@ -1632,3 +1632,121 @@ a.btn-link.text-light:after {
 .main-border-button a:hover {
   background-color: #555;
 }
+
+        .cart_section h4 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .table th, .table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .table img {
+            height: 80px;
+            width: auto;
+        }
+
+        .newsletter_container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .newsletter_input {
+            padding: 10px;
+            width: 60%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .newsletter_button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 4px;
+        }
+
+        .newsletter_button:hover {
+            background-color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        
+
+        .cart_buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cart_button_checkout {
+            padding: 12px 30px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .cart_button_checkout:hover {
+            background-color: #555;
+        }
+
+        .total {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .total table {
+            width: 100%;
+        }
+
+        .total td {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        .total strong {
+            font-weight: bold;
+        }
+
+        @media(max-width: 768px) {
+            .col-md-6, .col-md-12 {
+                width: 100%;
+            }
+
+            .newsletter_input {
+                width: 80%;
+            }
+        }

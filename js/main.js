@@ -13,3 +13,7 @@ function deleteProduct(button) {
     const productRow = button.parentElement.parentElement;
     productRow.remove();
 }
+
+function hideAddress(){
+    document.getElementById('shipForm').style.display = 'none'
+}

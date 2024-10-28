@@ -415,50 +415,135 @@
   
       </div>
     </nav>
-    
-    <div class="cart-container">
-        <h2 style="text-align: center;">Your Shopping Cart</h2>
-        <table class="cart-table" style="text-align: center;">
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="cart-body">
-                <!-- Items dynamically added here -->
-                <tr>
-                    <td style="text-align: center;"><img src="../images/banner-image-1.jpg" alt="T-Shirt" class="products-image"></td>
-                    <td style="text-align: center;">Classic T-Shirt</td>
-                    <td style="text-align: center;">
-                        <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
-                        <span class="quantity-number">1</span>
-                        <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
-                    </td>
-                    <td style="text-align: center;">$25.00</td>
-                    <td style="text-align: center;"><button class="delete-btn" onclick="deleteProduct(this)">Delete</button></td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;"><img src="../images/banner-image-1.jpg" alt="Jeans" class="products-image"></td>
-                    <td style="text-align: center;">Denim Jeans</td>
-                    <td style="text-align: center;">
-                        <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
-                        <span class="quantity-number">1</span>
-                        <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
-                    </td>
-                    <td style="text-align: center;">$45.00</td>
-                    <td style="text-align: center;"><button class="delete-btn" onclick="deleteProduct(this)">Delete</button></td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <div class="main-border-button" style="text-align: right;"><a href="order.html">Proceed to Checkout</a></div>
-    </div>
-    
 
+    <form method="POST" action="#">
+        <div class="cart_section">
+            <div class="container">
+                <h4>Shopping Cart</h4>
+                <table class="table">
+                    <tr>
+                        <th>SL</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Qty</th>
+                        <th>Rate</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Product Name</td>
+                        <td><img src="../images/banner-image-1.jpg" alt="Product Image"></td>
+                        <td>2</td>
+                        <td>$25</td>
+                        <td>$50</td>
+                    </tr>
+                    <!-- Repeat for more products -->
+                </table>
+
+                <div class="newsletter_container">
+                    <input type="text" class="newsletter_input" placeholder="Enter your coupon code">
+                    <button class="newsletter_button" type="submit">Apply Coupon</button>
+                </div>
+
+                <h4>Billing Details</h4>
+                <input type="checkbox" name="current_address" onclick="hideAddress()" value="1"> Use Current Address
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" placeholder="Last Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" placeholder="Full Address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" name="city" placeholder="City">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="zipcode">Zip Code</label>
+                                <input type="text" name="zipcode" placeholder="Zip Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Payment Methods</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="radio" name="payment" value="cod"> Cash On Delivery
+                                <input type="radio" name="payment" value="card"> Credit Card/Debit
+                                <input type="radio" name="payment" value="bkash"> Bkash
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h4 class="text-center">Checkout</h4>
+                    <div class="total">
+                        <table>
+                            <tr>
+                                <td><strong>Subtotal:</strong></td>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coupon:</strong></td>
+                                <td>- $5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Shipping Charge:</strong></td>
+                                <td>$00.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vat:</strong></td>
+                                <td>$00.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total:</strong></td>
+                                <td>$45</td>
+                            </tr>
+                        </table>
+                        <div class="cart_buttons">
+                            <button type="submit" class="cart_button_checkout">Confirm Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
 
     <footer id="footer" class="mt-5">
